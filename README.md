@@ -4,7 +4,7 @@
 The main interface of the application is designed to be easy to use and responsive, providing maximum user experience.
 
 <p align="center">
-  <img src="https://github.com/bransilva/master/blob/main/yeik.jpg?raw=true" alt="Tampilan Menu" width="600"/>
+  <img src="https://github.com/Cyberianz5/AIO-VPSv2/blob/main/yeik.jpg?raw=true" alt="Tampilan Menu" width="600"/>
 </p>
 ---
 
@@ -26,12 +26,12 @@ Fitur backup data VPS memungkinkan Anda menyimpan konfigurasi penting dengan mud
 
 ### UBUNTU & DEBIAN INSTALL SCRIPT 
 ```
-apt install -y && apt update -y && apt upgrade -y && wget -q https://raw.githubusercontent.com/bransilva/master/refs/heads/main/premi.sh && chmod +x premi.sh && ./premi.sh
+apt install -y && apt update -y && apt upgrade -y && wget -q https://raw.githubusercontent.com/Cyberianz5/AIO-VPSv2/refs/heads/main/premi.sh && chmod +x premi.sh && ./premi.sh
 ```
 
 ## UPDATE SCRIPT
 ```
-wget -q https://raw.githubusercontent.com/bransilva/master/refs/heads/main/update.sh && chmod +x update.sh && ./update.sh
+wget -q https://raw.githubusercontent.com/Cyberianz5/AIO-VPSv2/refs/heads/main/update.sh && chmod +x update.sh && ./update.sh
 ```
 
 ### SUPPORT OS LINUX
@@ -90,7 +90,7 @@ The bot will automatically send a message containing your chat ID.
 
 ``````
 
-  wget -qO- -O aksesroot.sh https://raw.githubusercontent.com/bransilva/master/refs/heads/main/aksesroot.sh && bash aksesroot.sh
+  wget -qO- -O aksesroot.sh https://raw.githubusercontent.com/Cyberianz5/AIO-VPSv2/refs/heads/main/aksesroot.sh && bash aksesroot.sh
 
 ```````
 
@@ -100,7 +100,7 @@ The bot will automatically send a message containing your chat ID.
 #### REINSTALL VPS UBUNTU DEBIAN
 
 ```
-curl -O https://raw.githubusercontent.com/bransilva/master/refs/heads/main/reinstall.sh
+curl -O https://raw.githubusercontent.com/Cyberianz5/AIO-VPSv2/refs/heads/main/reinstall.sh
 chmod +x reinstall.sh
 bash reinstall.sh debian 11 --password YOUR_PASSWORD
 ```
