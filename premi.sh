@@ -25,9 +25,7 @@ clear;clear;clear
 
 clear
 # Valid Script
-ipsaya=$(curl -sS ipv4.icanhazip.com)
-data_server=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Date | sed -e 's/< Date: //')
-date_list=$(date +"%Y-%m-%d" -d "$data_server")
+
 
   # // Banner
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
@@ -57,12 +55,7 @@ else
     exit 1
 fi
 
-# // IP Address Validating
-if [[ $IP == "" ]]; then
-    echo -e "${EROR} IP Address ( ${YELLOW}Not Detected${NC} )"
-else
-    echo -e "${OK} IP Address ( ${green}$IP${NC} )"
-fi
+
 
 # // Validate Successfull
 echo ""
@@ -80,8 +73,7 @@ fi
 red='\e[1;31m'
 green='\e[0;32m'
 NC='\e[0m'
-#IZIN SCRIPT
-MYIP=$(curl -sS ipv4.icanhazip.com)
+
 clear
 apt install ruby -y
 gem install lolcat
@@ -241,10 +233,10 @@ function pasang_domain() {
 echo -e ""
 clear
     echo -e "   .----------------------------------."
-echo -e "   |\e[1;32mPILIH DOMAIN SILAHKAN \e[0m|"
+echo -e "   |\e[1;32mDOMAIN SETUP \e[0m|"
 echo -e "   '----------------------------------'"
-echo -e "     \e[1;32m1)\e[0m Menggunakan Domain Sendiri"
-echo -e "     \e[1;32m2)\e[0m Menggunakan Domain Script"
+echo -e "     \e[1;32m1)\e[0m Choose Your Own Domain"
+echo -e "     \e[1;32m2)\e[0m Choose a Random Domain"
 echo -e "   ------------------------------------"
 read -p "   Please select numbers 1-2 or Any Button(Random) : " host
 echo ""
@@ -905,9 +897,9 @@ rm -rf /root/*.sh
 rm -rf /root/LICENSE
 rm -rf /root/README.md
 rm -rf /root/domain
-#sudo hostnamectl set-hostname $user
+
 secs_to_human "$(($(date +%s) - ${start}))"
-sudo hostnamectl set-hostname $username
+
 echo ""
 echo "------------------------------------------------------------"
 echo ""
