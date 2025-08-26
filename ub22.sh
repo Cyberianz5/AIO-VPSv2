@@ -31,11 +31,11 @@ date_list=$(date +"%Y-%m-%d" -d "$data_server")
 
 # // Banner
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
-echo -e " WELCOME TO HOKAGE LEGEND VPN ${YELLOW}(${NC}${green}Stable Edition${NC}${YELLOW})${NC}"
+echo -e " WELCOME TO EissamiXR VPN ${YELLOW}(${NC}${green}Stable Edition${NC}${YELLOW})${NC}"
 echo -e " PROSES PENGECEKAN IP ADDRESS ANDA !!"
 echo -e "${purple}----------------------------------------------------------${NC}"
 echo -e " ›AUTHOR : ${green}HOKAGE STORE® ${NC}${YELLOW}(${NC}${green}V 3.5${NC}${YELLOW})${NC}"
-echo -e " ›TEAM 🅥🅝: HOKAGE LEGEND ${YELLOW}(${NC} 2025 ${YELLOW})${NC}"
+echo -e " ›TEAM 🅥🅝: EissamiXR ${YELLOW}(${NC} 2025 ${YELLOW})${NC}"
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
 echo ""
 sleep 2
@@ -1025,11 +1025,11 @@ echo ""
 echo ""
 echo "------------------------------------------------------------"
 echo ""
-echo "===============-[ SCRIPT BY HOKAGE LEGEND ]-==============="
+echo "===============-[ SCRIPT BY EissamiXR ]-==============="
 echo -e ""
 echo ""
 echo "" | tee -a log-install.txt
-echo "Semuanya Berjalan Ok...Terimakasih Telah menggunakan Script Hokage Legend!!"
+echo "Semuanya Berjalan Ok...Terimakasih Telah menggunakan Script EissamiXR!!"
 sleep 1
 echo -ne "[ ${yell}COMPLETED${NC} ] PENGINSTALAN SCRIPT SELESAI? "
 reboot

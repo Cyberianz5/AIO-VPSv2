@@ -56,7 +56,7 @@ echo -e "            \033[0;35mPERMISSION DENIED !${exitsc}"
 echo -e "   ${j}Your VPS${exitsc} $ipsaya ${j}Has been Banned${exitsc}"
 echo -e "     ${j}Buy access permissions for scripts${exitsc}"
 echo -e "             ${j}Contact Admin :${exitsc}"
-echo -e "      \033[0;36mWhatsapp${exitsc} SCRIPT BY LUCKI NS"
+echo -e "      \033[0;36mWhatsapp${exitsc} SCRIPT BY EissamiXR"
 lane
 exit
 fi

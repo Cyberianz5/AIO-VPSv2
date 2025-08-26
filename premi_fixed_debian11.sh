@@ -1025,11 +1025,11 @@ echo ""
 echo ""
 echo "------------------------------------------------------------"
 echo ""
-echo "===============-[ SCRIPT BY HOKAGE LEGEND ]-==============="
+echo "===============-[ SCRIPT BY EissamiXR ]-==============="
 echo -e ""
 echo ""
 echo "" | tee -a log-install.txt
-echo "Semuanya Berjalan Ok...Terimakasih Telah menggunakan Script Hokage Legend!!"
+echo "Semuanya Berjalan Ok...Terimakasih Telah menggunakan Script EissamiXR!!"
 sleep 1
 echo -ne "[ ${yell}COMPLETED${NC} ] PENGINSTALAN SCRIPT SELESAI? "
 reboot

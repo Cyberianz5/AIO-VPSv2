@@ -121,7 +121,7 @@ clear
 
 echo -e " "
 echo -e "   ${Blue}╭════════════════════════════════════════════╮${NC}"
-echo -e "   ${Blue}│$NC${f}     Welcome To SCRIPT BY LUCKI NS PREMIUM       $NC${Blue}│$NC"
+echo -e "   ${Blue}│$NC${f}     Welcome To SCRIPT BY EissamiXR PREMIUM       $NC${Blue}│$NC"
 echo -e "   ${Blue}╰════════════════════════════════════════════╯${NC}"
 echo -e " ${YELL}╭══════════════════════════════════════════════════╮${NC}"
 echo -e "   ${z}$NC [${f}01${NC}]$grenbo MENU TRIAL$NC       ${z}   $NC [${f}08${NC}]$purple BACKUP/ RESTORE "    
@@ -142,7 +142,7 @@ echo -e "   ${Blue}│$NC${f} IP ADDRESS$NC ${z}=$NC $IPVPS${NC}"
 echo -e "   ${Blue}│$NC${f} User$NC       ${z}=$NC $username"
 echo -e "   ${Blue}│$NC${f} Exp Script$NC ${z}=$NC $exp $certifacate Days$NC $sts"
 echo -e "   ${Blue}╰═══════════════════════════════════════${NC}"
-echo -e "     ${f}THANKS YOU FOR USING SCRIPT BY LUCKI NS $NC"
+echo -e "     ${f}THANKS YOU FOR USING SCRIPT BY EissamiXR $NC"
 echo -e ""
 read -p " PILIH OPSI MENU [ 1-14 atau x] ➤ : " opt
 echo -e ""

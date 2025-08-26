@@ -31,11 +31,11 @@ date_list=$(date +"%Y-%m-%d" -d "$data_server")
 
   # // Banner
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
-echo -e " WELCOME TO LUCKI NS STORE VPN ${YELLOW}(${NC}${green}Stable Edition${NC}${YELLOW})${NC}"
+echo -e " WELCOME TO EissamiXR STORE VPN ${YELLOW}(${NC}${green}Stable Edition${NC}${YELLOW})${NC}"
 echo -e " PROSES PENGECEKAN IP ADDRESS ANDA !!"
 echo -e "${purple}----------------------------------------------------------${NC}"
-echo -e " ›AUTHOR : ${green}LUCKI NS® ${NC}${YELLOW}(${NC}${green}V 3.5${NC}${YELLOW})${NC}"
-echo -e " ›TEAM 🅥🅝: LUCKI NS ${YELLOW}(${NC} 2025 ${YELLOW})${NC}"
+echo -e " ›AUTHOR : ${green}EissamiXR® ${NC}${YELLOW}(${NC}${green}V 3.5${NC}${YELLOW})${NC}"
+echo -e " ›TEAM 🅥🅝: EissamiXR ${YELLOW}(${NC} 2025 ${YELLOW})${NC}"
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
 echo ""
 sleep 2
@@ -295,49 +295,49 @@ certifacate=$(((d1 - d2) / 86400))
 DATE=$(date +'%Y-%m-%d')
 datediff() {
     d1=$(date -d "$1" +%s)
-    d2=$(date -d "$2" +%s)
-    echo -e "$COLOR1 $NC Expiry In   : $(( (d1 - d2) / 86400 )) Days"
-}
-mai="datediff "$Exp" "$DATE""
+        d2=$(date -d "$2" +%s)
+            echo -e "$COLOR1 $NC Expiry In   : $(( (d1 - d2) / 86400 )) Days"
+            }
+            mai="datediff "$Exp" "$DATE""
 
-# Status Expired Active
-Info="(${green}Active${NC})"
-Error="(${RED}ExpiRED${NC})"
-today=`date -d "0 days" +"%Y-%m-%d"`
-Exp1=$(curl $izinsc | grep $MYIP | awk '{print $4}')
-if [[ $today < $Exp1 ]]; then
-sts="${Info}"
-else
-sts="${Error}"
-fi
-TIMES="10"
-CHATID="1469244768"
-KEY="7911375235:AAERwknqnWLoqWFbsSuUfqCQGMy93UQHUTk"
-URL="https://api.telegram.org/bot$KEY/sendMessage"
-ISP=$(cat /root/.isp)
-CITY=$(cat /root/.city)
-TIMEZONE=$(printf '%(%H:%M:%S)T')
-DOMAIN=$(cat /root/domain)
-    TEXT="
-<code>────────────────────</code>
-<b>⚡𝗡𝗢𝗧𝗜𝗙 𝗜𝗡𝗦𝗧𝗔𝗟𝗟 𝗦𝗖𝗥𝗜𝗣𝗧⚡</b>
-<code>────────────────────</code>
-<code>User     :</code><code>$username</code>
-<code>ISP      :</code><code>$ISP</code>
-<code>CITY     :</code><code>$CITY</code>
-<code>DATE     :</code><code>$DATE</code>
-<code>Time     :</code><code>$TIMEZONE</code>
-<code>Exp Sc.  :</code><code>$exp</code>
-<code>DOMAIN     :</code><code>$domain</code>
-<code>─────────────────────────────</code>
-<b> LUCKI NS CENTER VPN STORE SCRIPT  </b>
-<code>─────────────────────────────</code>
-<i>Automatic Notifications From Github</i>
-"'&reply_markup={"inline_keyboard":[[{"text":"ᴏʀᴅᴇʀ","url":"t.me/hokagelegend1"}]]}' 
+            # Status Expired Active
+            Info="(${green}Active${NC})"
+            Error="(${RED}ExpiRED${NC})"
+            today=`date -d "0 days" +"%Y-%m-%d"`
+            Exp1=$(curl $izinsc | grep $MYIP | awk '{print $4}')
+            if [[ $today < $Exp1 ]]; then
+            sts="${Info}"
+            else
+            sts="${Error}"
+            fi
+            TIMES="10"
+            CHATID="1469244768"
+            KEY="7911375235:AAERwknqnWLoqWFbsSuUfqCQGMy93UQHUTk"
+            URL="https://api.telegram.org/bot$KEY/sendMessage"
+            ISP=$(cat /root/.isp)
+            CITY=$(cat /root/.city)
+            TIMEZONE=$(printf '%(%H:%M:%S)T')
+            DOMAIN=$(cat /root/domain)
+                TEXT="
+                <code>────────────────────</code>
+                <b>⚡𝗡𝗢𝗧𝗜𝗙 𝗜𝗡𝗦𝗧𝗔𝗟𝗟 𝗦𝗖𝗥𝗜𝗣𝗧⚡</b>
+                <code>────────────────────</code>
+                <code>User     :</code><code>$username</code>
+                <code>ISP      :</code><code>$ISP</code>
+                <code>CITY     :</code><code>$CITY</code>
+                <code>DATE     :</code><code>$DATE</code>
+                <code>Time     :</code><code>$TIMEZONE</code>
+                <code>Exp Sc.  :</code><code>$exp</code>
+                <code>DOMAIN     :</code><code>$domain</code>
+                <code>─────────────────────────────</code>
+                <b> EissamiXR CENTER VPN STORE SCRIPT  </b>
+                <code>─────────────────────────────</code>
+                <i>Automatic Notifications From Github</i>
+                "'&reply_markup={"inline_keyboard":[[{"text":"ᴏʀᴅᴇʀ","url":"t.me/hokagelegend1"}]]}' 
 
-    curl -s --max-time $TIMES -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
-}
-clear
+                    curl -s --max-time $TIMES -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
+                    }
+                    clear
 # Pasang SSL
 function pasang_ssl() {
 clear
@@ -1019,11 +1019,11 @@ echo ""
 echo ""
 echo "------------------------------------------------------------"
 echo ""
-echo "===============-[ SCRIPT BY LUCKI NS ]-==============="
+echo "===============-[ SCRIPT BY EissamiXR ]-==============="
 echo -e ""
 echo ""
 echo "" | tee -a log-install.txt
-echo "Semuanya Berjalan Ok...Terimakasih Telah menggunakan Script Hokage Legend!!"
+echo "Semuanya Berjalan Ok...Terimakasih Telah menggunakan Script EissamiXR!!"
 sleep 1
 echo -ne "[ ${yell}COMPLETED${NC} ] PENGINSTALAN SCRIPT SELESAI? "
 reboot
