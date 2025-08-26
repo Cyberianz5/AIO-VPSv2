@@ -31,46 +31,6 @@ DATEVPS=$(date +'%d-%m-%Y')
 TIMEZONE=$(printf '%(%H-%M-%S)T')
 SERONLINE=$(uptime -p | cut -d " " -f 2-10000)
 clear
-MYIP=$(curl -sS ipv4.icanhazip.com)
-echo ""
-izinsc="https://raw.githubusercontent.com/Cyberianz5/AIO-VPSv2/refs/heads/main/permission"
-# USERNAME
-rm -f /usr/bin/user
-username=$(curl ${izinsc} | grep $MYIP | awk '{print $2}')
-echo "$username" >/usr/bin/user
-# validity
-rm -f /usr/bin/e
-valid=$(curl ${izinsc} | grep $MYIP | awk '{print $3}')
-echo "$valid" >/usr/bin/e
-# DETAIL ORDER
-username=$(cat /usr/bin/user)
-oid=$(cat /usr/bin/ver)
-exp=$(cat /usr/bin/e)
-clear
-# CERTIFICATE STATUS
-d1=$(date -d "$valid" +%s)
-d2=$(date -d "$today" +%s)
-certifacate=$(((d1 - d2) / 86400))
-# VPS Information
-DATE=$(date +'%Y-%m-%d')
-datediff() {
-    d1=$(date -d "$1" +%s)
-    d2=$(date -d "$2" +%s)
-    echo -e "$COLOR1 $NC Expiry In   : $(( (d1 - d2) / 86400 )) Days"
-}
-mai="datediff "$Exp" "$DATE""
-
-# Status Expired Or Active
-Info="(${green}Active${NC})"
-Error="(${RED}Expired${NC})"
-today=`date -d "0 days" +"%Y-%m-%d"`
-Exp1=$(curl ${izinsc} | grep $MYIP | awk '{print $3}')
-if [[ $today < $Exp1 ]]; then
-sts="${Info}"
-else
-sts="${Error}"
-fi
-clear
 
 # OS Uptime
 uptime="$(uptime -p | cut -d " " -f 2-10)"
@@ -199,8 +159,8 @@ echo -e " ${z}╭═════════════════════
 echo -e " ${z}│$NC${z} Developer$NC  ${z}=$NC SCRIPT BY EissamiXR"
 echo -e " ${z}│$NC${z} Telegram$NC   ${z}=$NC @EissamiXR"
 echo -e " ${z}│$NC${z} IP ADDRESS ${z}=$NC $IPVPS${NC}"
-echo -e " ${z}│$NC${z} User$NC       ${z}=$NC $username"
-echo -e " ${z}│$NC${z} Exp Script$NC ${z}=$NC $exp $certifacate Days$NC $sts"
+echo -e " ${z}│$NC${z} User$NC       ${z}=$NC local-user"
+echo -e " ${z}│$NC${z} Exp Script$NC ${z}=$NC Unlimited (License Removed)"
 echo -e " ${z}╰══════════════════════════════════════════════════════════╯${NC}"
 echo -e "     ${KIRI}${z}THANKS YOU FOR USING SCRIPT BY EissamiXR${z}${KANAN}"
 echo -e ""

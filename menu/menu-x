@@ -31,26 +31,7 @@ DATEVPS=$(date +'%d-%m-%Y')
 TIMEZONE=$(printf '%(%H-%M-%S)T')
 SERONLINE=$(uptime -p | cut -d " " -f 2-10000)
 clear
-MYIP=$(curl -sS ipv4.icanhazip.com)
-echo ""
-izinsc="https://raw.githubusercontent.com/Cyberianz5/AIO-VPSv2/refs/heads/main/permission"
-# USERNAME
-rm -f /usr/bin/user
-username=$(curl ${izinsc} | grep $MYIP | awk '{print $2}')
-echo "$username" >/usr/bin/user
-# validity
-rm -f /usr/bin/e
-valid=$(curl ${izinsc} | grep $MYIP | awk '{print $3}')
-echo "$valid" >/usr/bin/e
-# DETAIL ORDER
-username=$(cat /usr/bin/user)
-oid=$(cat /usr/bin/ver)
-exp=$(cat /usr/bin/e)
-clear
-# CERTIFICATE STATUS
-d1=$(date -d "$valid" +%s)
-d2=$(date -d "$today" +%s)
-certifacate=$(((d1 - d2) / 86400))
+
 # VPS Information
 DATE=$(date +'%Y-%m-%d')
 datediff() {
@@ -60,16 +41,7 @@ datediff() {
 }
 mai="datediff "$Exp" "$DATE""
 
-# Status Expired Or Active
-Info="(${green}Active${NC})"
-Error="(${RED}Expired${NC})"
-today=`date -d "0 days" +"%Y-%m-%d"`
-Exp1=$(curl ${izinsc} | grep $MYIP | awk '{print $3}')
-if [[ $today < $Exp1 ]]; then
-sts="${Info}"
-else
-sts="${Error}"
-fi
+
 clear
 
 # OS Uptime
